@@ -1,0 +1,16 @@
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h1>Stateful</h1>
+        <p class="lead">Ejemplo de componete stateful.</p>
+
+        <div class="card-deck">
+            <div class="card" *ngFor="let curso of shopModel.shopItems">
+                <app-stateless [product]="curso"></app-stateless>
+            </div>
+        </div>
+    </div>
+    <ul class="list-group">
+        <li *ngFor="let boughtItem of boughtItems" class="list-group-item"> {{ boughtItem.title }} </li>
+    </ul>
+</main><!-- /.container -->
