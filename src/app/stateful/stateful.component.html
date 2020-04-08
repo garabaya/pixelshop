@@ -20,4 +20,5 @@
     <input type="text" (keydown)="onKeyboard($event)" />
     <app-confirm (confirmado)=confirmar()></app-confirm>
     <app-status-cart [price]="getTotal()" [shopModel]="shopModel.shopItems" (add)="confirmar()"></app-status-cart>
+    <app-formularioreactivo></app-formularioreactivo>
 </main><!-- /.container -->
